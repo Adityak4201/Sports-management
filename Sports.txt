@@ -1,0 +1,8 @@
+drop database sports;
+create database sports;
+use sports;
+create table shopkeeper(username varchar(25), password varchar(25));
+create table sports(shopkeeper_id int, shopkeeper_name varchar(30), item varchar(25), itemnumber int, delivery_address varchar(50), mobile long,payment int,pay_method varchar(30));
+create table customer(username varchar(25), password varchar(25));
+create table sports_customer(customer_id int, customer_name varchar(30), item varchar(25), itemnumber int, delivery_address varchar(50), mobile long,payment int,pay_method varchar(30));
+create table clothes(shopkeeper_id int, shopkeeper_name varchar(30), item varchar(25), itemnumber int, delivery_address varchar(50), mobile long,payment int,pay_method varchar(30));
